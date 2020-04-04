@@ -1,5 +1,7 @@
 # Swift Cross-Module Conformance Demo
 
+Bug Report: https://bugs.swift.org/browse/SR-12513
+
 This little example demonstrates how Swift deals with conflicting conformances
 across modules.  There appears to be some dependence on import order, among
 other things.  
