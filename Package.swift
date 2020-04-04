@@ -13,6 +13,7 @@ let package = Package(
         .target(name: "A", dependencies: ["C"]),
         .target(name: "B", dependencies: ["C"]),
         .target(name: "C", dependencies: []),
-        .testTarget(name: "TopTests", dependencies: ["A", "B", "C"]),
+        .testTarget(name: "Test0", dependencies: ["A", "B", "C"]),
+        .testTarget(name: "Test1", dependencies: ["A", "B", "C"]),
     ]
 )

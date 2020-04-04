@@ -1,7 +1,7 @@
 
 import XCTest
 
-private final class TopTests: XCTestCase {
+private final class Test1: XCTestCase {
     func testExample() {
         // Fails if we comment out "import A" in AB.swift
         XCTAssertEqual(ab, ba)
