@@ -1,6 +1,7 @@
 import A
 import B
-import Bottom
+import C
 
 let ab = X().identity
 
+let idA = X().idA
