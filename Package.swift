@@ -16,5 +16,6 @@ let package = Package(
         .testTarget(name: "Test0", dependencies: ["A", "B", "C"]),
         .testTarget(name: "Test1", dependencies: ["A", "B", "C"]),
         .testTarget(name: "Test2", dependencies: ["A", "B", "C"]),
+        .testTarget(name: "Test3", dependencies: ["A", "B", "C"]),
     ]
 )
