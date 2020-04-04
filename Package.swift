@@ -10,6 +10,15 @@ let package = Package(
         .library(
             name: "Top",
             targets: ["Top"]),
+        .library(
+            name: "A",
+            targets: ["A"]),
+        .library(
+            name: "B",
+            targets: ["B"]),
+    .library(
+        name: "Bottom",
+        targets: ["Bottom"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,9 +29,18 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "Top",
+            dependencies: ["A", "B", "Bottom"]),
+        .target(
+            name: "A",
+            dependencies: ["Bottom"]),
+        .target(
+            name: "B",
+            dependencies: ["Bottom"]),
+        .target(
+            name: "Bottom",
             dependencies: []),
         .testTarget(
             name: "TopTests",
-            dependencies: ["Top"]),
+            dependencies: ["Top", "A", "B", "Bottom"]),
     ]
 )
