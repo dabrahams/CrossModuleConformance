@@ -3,14 +3,10 @@ import XCTest
 
 private final class Test1: XCTestCase {
     func testExample() {
-        // Fails if we comment out "import A" in AB.swift
         XCTAssertEqual(ab, ba)
-        // Fails if we comment out "import A" in AB.swift
         XCTAssertEqual(idA, idB)
-        // Apparently always succeeds.
         XCTAssertEqual(ab, idA)
-        // Let's see which value we get when everything passes.
-        print("*************", ab, "***************")
+        print("*************", ab, ba, idA, idB, "***************")
     }
 
     static var allTests = [
